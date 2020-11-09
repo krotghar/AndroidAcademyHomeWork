@@ -14,7 +14,8 @@ class ThirdActivity : AppCompatActivity() {
 
         backToMainBtn.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java)
-                    .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
+                    .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+                    .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK))
         }
 
         backBtn.setOnClickListener {
