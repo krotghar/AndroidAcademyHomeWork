@@ -2,11 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="170dp"
     android:layout_height="296dp"
     android:background="@drawable/bg"
-    android:id="@+id/movie_card">
+    android:id="@+id/movie_card"
+    android:layout_marginBottom="6dp">
     <ImageView
         android:id="@+id/card_bg"
         android:layout_width="wrap_content"
@@ -80,6 +80,7 @@
         android:textAppearance="@style/movie_title_card"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
